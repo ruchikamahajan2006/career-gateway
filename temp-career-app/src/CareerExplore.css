@@ -1,0 +1,146 @@
+.explore-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px 24px 50px;
+  color: #20213a;
+}
+
+.explore-hero {
+  padding: 38px;
+  border-radius: 24px;
+  background: linear-gradient(135deg, #eeeaff, #fce8f3);
+  margin-bottom: 26px;
+}
+
+.explore-eyebrow {
+  color: #6b4ce6;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.explore-hero h1 {
+  margin: 12px 0;
+  font-size: clamp(30px, 5vw, 44px);
+}
+
+.explore-hero p {
+  max-width: 650px;
+  color: #62627a;
+  line-height: 1.7;
+}
+
+.explore-controls {
+  display: grid;
+  grid-template-columns: 1fr 230px;
+  gap: 14px;
+  margin-bottom: 18px;
+}
+
+.explore-controls input,
+.explore-controls select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 14px 16px;
+  border: 1px solid #deddec;
+  border-radius: 12px;
+  background: white;
+  color: #20213a;
+  font: inherit;
+  outline: none;
+}
+
+.explore-controls input:focus,
+.explore-controls select:focus {
+  border-color: #8065ed;
+  box-shadow: 0 0 0 3px #8065ed20;
+}
+
+.explore-count {
+  color: #74748a;
+  font-size: 14px;
+  margin: 18px 0;
+}
+
+.explore-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.explore-card {
+  padding: 24px;
+  background: white;
+  border: 1px solid #eceaf5;
+  border-radius: 18px;
+  box-shadow: 0 8px 28px #25204408;
+}
+
+.explore-category {
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 20px;
+  background: #f0ecff;
+  color: #6947d8;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.explore-card h2 {
+  margin: 16px 0;
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+.explore-card p {
+  color: #65657a;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.explore-card strong {
+  color: #303047;
+}
+
+.explore-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 18px;
+}
+
+.explore-tags span {
+  padding: 7px 10px;
+  border-radius: 8px;
+  background: #f6f5fb;
+  color: #59566f;
+  font-size: 12px;
+}
+
+.explore-empty {
+  padding: 35px;
+  text-align: center;
+  color: #74748a;
+}
+
+.explore-disclaimer {
+  margin-top: 28px;
+  color: #77768a;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+@media (max-width: 700px) {
+  .explore-page {
+    padding: 20px 14px 35px;
+  }
+
+  .explore-hero {
+    padding: 25px;
+  }
+
+  .explore-controls,
+  .explore-grid {
+    grid-template-columns: 1fr;
+  }
+}

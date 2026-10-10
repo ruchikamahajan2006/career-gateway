@@ -1,0 +1,270 @@
+
+.student-progress-page {
+  width: min(1180px, calc(100% - 36px));
+  margin: 0 auto;
+  padding: 38px 0 64px;
+  color: #20223a;
+}
+
+.student-progress-hero {
+  padding: 42px;
+  border-radius: 28px;
+  background: linear-gradient(135deg, #f1edff 0%, #e9f6ff 55%, #fff0f6 100%);
+  border: 1px solid #e6e5f5;
+}
+
+.student-progress-eyebrow,
+.progress-section-label {
+  color: #7053c7;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.11em;
+}
+
+.student-progress-hero h1 {
+  margin: 12px 0;
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  line-height: 1.12;
+}
+
+.student-progress-hero > p,
+.student-progress-section-heading p,
+.student-progress-card > p,
+.student-progress-next p {
+  color: #686a80;
+  line-height: 1.7;
+}
+
+.student-progress-hero > p {
+  max-width: 650px;
+}
+
+.student-progress-hero-actions {
+  margin-top: 24px;
+}
+
+.progress-primary-button {
+  padding: 12px 18px;
+  border: 0;
+  border-radius: 12px;
+  background: #7053c7;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.progress-primary-button:hover {
+  background: #5e43b3;
+}
+
+.student-progress-stats {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  margin: 24px 0;
+}
+
+.student-progress-stat,
+.student-progress-card,
+.student-progress-next {
+  background: #fff;
+  border: 1px solid #e9e8f1;
+  border-radius: 20px;
+  box-shadow: 0 8px 28px rgba(35, 30, 70, 0.045);
+}
+
+.student-progress-stat {
+  padding: 22px;
+}
+
+.progress-stat-icon {
+  font-size: 1.65rem;
+}
+
+.student-progress-stat p {
+  margin: 16px 0 6px;
+  color: #707186;
+  font-size: 0.9rem;
+}
+
+.student-progress-stat strong {
+  display: block;
+  font-size: 2rem;
+  color: #292443;
+}
+
+.progress-stat-caption {
+  display: block;
+  margin-top: 6px;
+  color: #8a8b9d;
+  font-size: 0.78rem;
+}
+
+.student-progress-card {
+  padding: 30px;
+  margin-top: 20px;
+}
+
+.student-progress-section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+}
+
+.student-progress-section-heading h2,
+.student-progress-card h2,
+.student-progress-next h2 {
+  margin: 9px 0;
+  font-size: clamp(1.25rem, 3vw, 1.7rem);
+}
+
+.progress-large-icon {
+  font-size: 2.5rem;
+}
+
+.progress-field-label {
+  display: block;
+  margin: 22px 0 8px;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.progress-career-select {
+  width: 100%;
+  max-width: 540px;
+  padding: 13px 14px;
+  border: 1px solid #dcd9ec;
+  border-radius: 12px;
+  background: #fff;
+  color: #25243a;
+  font: inherit;
+}
+
+.student-progress-bar-heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 28px 0 10px;
+  font-size: 0.9rem;
+}
+
+.student-progress-bar-heading span {
+  color: #73748a;
+}
+
+.student-progress-bar {
+  width: 100%;
+  height: 12px;
+  overflow: hidden;
+  border-radius: 99px;
+  background: #eeecf6;
+}
+
+.student-progress-bar > div {
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #7c5ce7, #48b9ad);
+  transition: width 250ms ease;
+}
+
+.progress-motivation {
+  margin: 16px 0 0;
+  color: #57516e;
+  line-height: 1.6;
+}
+
+.progress-assessment-check {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 20px;
+  padding: 16px;
+  border-radius: 12px;
+  background: #f7f5ff;
+  cursor: pointer;
+}
+
+.progress-assessment-check input {
+  width: 18px;
+  height: 18px;
+  accent-color: #7053c7;
+}
+
+.progress-small-note {
+  font-size: 0.83rem;
+}
+
+.student-progress-next {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  align-items: center;
+  padding: 30px;
+  margin-top: 20px;
+  background: #fbfaff;
+}
+
+.progress-next-steps {
+  display: grid;
+  gap: 12px;
+}
+
+.progress-next-steps > div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #53536b;
+}
+
+.progress-next-steps span {
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: #ece6ff;
+  color: #6247b5;
+  font-weight: 800;
+}
+
+@media (max-width: 900px) {
+  .student-progress-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .student-progress-page {
+    width: min(100% - 24px, 1180px);
+    padding-top: 20px;
+  }
+
+  .student-progress-hero,
+  .student-progress-card,
+  .student-progress-next {
+    padding: 22px;
+    border-radius: 18px;
+  }
+
+  .student-progress-stats {
+    gap: 10px;
+  }
+
+  .student-progress-stat {
+    padding: 16px;
+  }
+
+  .student-progress-stat strong {
+    font-size: 1.6rem;
+  }
+
+  .student-progress-next {
+    grid-template-columns: 1fr;
+  }
+
+  .student-progress-section-heading {
+    align-items: flex-start;
+  }
+}

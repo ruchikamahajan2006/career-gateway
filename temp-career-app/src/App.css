@@ -1,0 +1,247 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: Inter, "Segoe UI", Arial, sans-serif;
+  color: #242044;
+  background: #faf9ff;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: #faf9ff;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:focus-visible,
+input:focus-visible,
+select:focus-visible {
+  outline: 3px solid #a99af8;
+  outline-offset: 3px;
+}
+
+.career-gateway-app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.cg-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 18px 5%;
+  background: #fff;
+  border-bottom: 1px solid #eeeaf9;
+  box-shadow: 0 4px 18px rgba(42, 30, 90, 0.04);
+}
+
+.cg-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: #30245e;
+  font-size: 23px;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.cg-brand-icon {
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 12px;
+  background: #eee9ff;
+  color: #7355df;
+}
+
+.app-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.app-navigation button {
+  padding: 10px 15px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  background: transparent;
+  color: #5e5876;
+  font-size: 14px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.app-navigation button:hover {
+  background: #f4f0ff;
+  color: #6244d4;
+}
+
+.app-navigation button.active {
+  background: #eee9ff;
+  color: #6244d4;
+  font-weight: 700;
+}
+
+.cg-home {
+  width: 100%;
+  flex: 1;
+}
+
+.cg-home-hero {
+  padding: 90px 8% 75px;
+  background: linear-gradient(125deg, #eeeaff 0%, #faf7ff 55%, #fcecf5 100%);
+}
+
+.cg-home-hero > p:first-child {
+  color: #7355df;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.cg-home-hero h1 {
+  max-width: 780px;
+  margin: 18px 0;
+  color: #29204e;
+  font-size: clamp(36px, 5vw, 62px);
+  line-height: 1.13;
+  letter-spacing: -1.5px;
+}
+
+.cg-home-hero h1 span {
+  color: #7959e8;
+}
+
+.cg-home-hero > p:not(:first-child) {
+  max-width: 650px;
+  color: #68627c;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.cg-home-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.cg-home-actions button {
+  padding: 13px 20px;
+  border: 1px solid #7655e5;
+  border-radius: 11px;
+  background: #7655e5;
+  color: #fff;
+  font-weight: 700;
+  transition: transform 0.2s, background 0.2s;
+}
+
+.cg-home-actions button:hover {
+  transform: translateY(-2px);
+  background: #6140d0;
+}
+
+.cg-home-actions button + button {
+  background: #fff;
+  color: #6848d5;
+}
+
+.cg-home-actions button + button:hover {
+  background: #f5f1ff;
+}
+
+.cg-feature-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
+  padding: 36px 5%;
+}
+
+.cg-feature-grid > button {
+  min-width: 0;
+  padding: 26px 22px;
+  border: 1px solid #ebe6f7;
+  border-radius: 18px;
+  background: #fff;
+  text-align: left;
+  box-shadow: 0 8px 25px rgba(44, 30, 90, 0.05);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.cg-feature-grid > button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 14px 30px rgba(44, 30, 90, 0.10);
+}
+
+.cg-feature-grid > button > span {
+  display: inline-grid;
+  place-items: center;
+  width: 46px;
+  height: 46px;
+  border-radius: 14px;
+  background: #f0ebff;
+  font-size: 23px;
+}
+
+.cg-feature-grid h2 {
+  margin: 18px 0 10px;
+  color: #30264e;
+  font-size: 18px;
+}
+
+.cg-feature-grid p {
+  margin: 0;
+  color: #777087;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.cg-footer {
+  padding: 22px 5%;
+  border-top: 1px solid #eeeaf7;
+  background: #fff;
+  color: #777087;
+  font-size: 13px;
+  text-align: center;
+}
+
+.cg-chat-panel {
+  width: min(900px, 92%);
+  margin: 32px auto;
+}
+
+.cg-chat-panel .cg-home-hero {
+  padding: 35px;
+  border-radius: 20px;
+}
+
+.cg-chat-panel .cg-home-hero h1 {
+  font-size: clamp(30px, 4vw, 42px);
+}
+
+.cg-chat-messages {
+  display: flex;
+  flex-direction: column;
+  gap
+}
