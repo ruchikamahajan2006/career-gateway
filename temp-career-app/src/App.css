@@ -1,3 +1,4 @@
+
 * {
   box-sizing: border-box;
 }
@@ -110,7 +111,12 @@ select:focus-visible {
 
 .cg-home-hero {
   padding: 90px 8% 75px;
-  background: linear-gradient(125deg, #eeeaff 0%, #faf7ff 55%, #fcecf5 100%);
+  background: linear-gradient(
+    125deg,
+    #eeeaff 0%,
+    #faf7ff 55%,
+    #fcecf5 100%
+  );
 }
 
 .cg-home-hero > p:first-child {
@@ -191,7 +197,7 @@ select:focus-visible {
 
 .cg-feature-grid > button:hover {
   transform: translateY(-5px);
-  box-shadow: 0 14px 30px rgba(44, 30, 90, 0.10);
+  box-shadow: 0 14px 30px rgba(44, 30, 90, 0.1);
 }
 
 .cg-feature-grid > button > span {
@@ -243,5 +249,40 @@ select:focus-visible {
 .cg-chat-messages {
   display: flex;
   flex-direction: column;
-  gap
+  gap: 12px;
+}
+
+/* Responsive layout */
+@media (max-width: 900px) {
+  .cg-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .app-navigation {
+    justify-content: flex-start;
+  }
+
+  .cg-feature-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 560px) {
+  .cg-home-hero {
+    padding: 55px 6% 45px;
+  }
+
+  .cg-home-hero h1 {
+    font-size: 36px;
+  }
+
+  .cg-feature-grid {
+    grid-template-columns: 1fr;
+    padding: 24px 6%;
+  }
+
+  .cg-chat-panel .cg-home-hero {
+    padding: 24px;
+  }
 }
